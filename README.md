@@ -22,6 +22,7 @@ npm install -g nodemon
 ```
 ## Install MongoDB
 https://docs.mongodb.com/ecosystem/platforms/amazon-ec2/#manually-deploy-mongodb-on-ec2
+
 Update yum with mongo repositories:
 ```
 echo "[mongodb-org-3.2]
@@ -47,12 +48,14 @@ sudo chkconfig mongod on
 ```
 ## Port 80
 http://stackoverflow.com/questions/16573668/best-practices-when-running-node-js-with-port-80-ubuntu-linode
+
 By default express js runs in the port 3000 and normal users cannot open the 80 port. Se it is necessary to configure the iptables to redirect port 80 to 3000.
 ```
 sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 3000
 ```
 ## Mongo remote connection
 https://www.mkyong.com/mongodb/mongodb-allow-remote-access/
+
 Review bind_ip configuration.
 ```
 $ vim /etc/mongod.conf
