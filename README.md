@@ -54,3 +54,11 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-po
 ## Mongo remote connection
 https://www.mkyong.com/mongodb/mongodb-allow-remote-access/
 Review bind_ip configuration.
+```
+$ vim /etc/mongod.conf
+
+# /etc/mongod.conf
+
+# Listen to local interface only. Comment out to listen on all interfaces.
+bind_ip = 127.0.0.1
+```
