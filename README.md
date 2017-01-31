@@ -55,7 +55,7 @@ sudo iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 80 -j REDIRECT --to-po
 ```
 To persist iptables configuration
 ```
-service iptables save
+sudo service iptables save
 ```
 ## Mongo remote connection
 https://www.mkyong.com/mongodb/mongodb-allow-remote-access/
