@@ -69,8 +69,12 @@ $ vim /etc/mongod.conf
 # Listen to local interface only. Comment out to listen on all interfaces.
 bind_ip = 127.0.0.1
 ```
-
-## Startup app when reboot
+## Install forever
+```
+npm install -g forever
+```
+http://stackoverflow.com/questions/16369018/forever-nodemon-running-together
+## Start app when reboot
 First create .sh script file to run the application then
 ```
 crontab -e
