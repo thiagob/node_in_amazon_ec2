@@ -69,3 +69,12 @@ $ vim /etc/mongod.conf
 # Listen to local interface only. Comment out to listen on all interfaces.
 bind_ip = 127.0.0.1
 ```
+
+## Startup app when reboot
+First create .sh script file to run the application then
+```
+crontab -e
+@reboot /bin/sh /home/bob/node_server_init.sh
+```
+http://stackoverflow.com/questions/13385029/automatically-start-forever-node-on-system-restart
+http://stackoverflow.com/questions/15470016/how-to-write-cron-job-in-aws-ec2-server
