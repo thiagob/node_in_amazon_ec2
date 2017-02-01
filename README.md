@@ -82,3 +82,4 @@ crontab -e
 ```
 http://stackoverflow.com/questions/13385029/automatically-start-forever-node-on-system-restart
 http://stackoverflow.com/questions/15470016/how-to-write-cron-job-in-aws-ec2-server
+http://iws.io/hosting-a-nodejs-express-application-on-amazon-web-services-ec2/
